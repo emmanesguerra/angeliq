@@ -1,0 +1,2 @@
+Create Core Routes -> RouteServiceProviders.php
+Create additional path on config/view.php

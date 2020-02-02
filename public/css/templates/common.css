@@ -1,0 +1,209 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07 1, 18, 10:20:42 PM
+    Author     : ai
+*/
+
+
+@font-face {
+    font-family: 'damionregular';
+    src: url('../../fonts/Damion/damion-regular-webfont.woff2') format('woff2'),
+        url('../../fonts/Damion/damion-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header
+{
+    font-family: 'damionregular';
+    float: left;
+    width: 100%;
+    padding: 10px 0 0;
+    background: #fff;
+    color: #e23393;
+    border-bottom: 1px solid #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'damionregular';
+    color: #e23393;
+}
+
+.logo span
+{
+    display: block;
+    line-height: 75px;
+}
+
+.logo .main
+{
+    font-size: 97px;
+}
+.logo .sub
+{
+    font-size: 30px;
+}
+
+.nav
+{
+    font-size: 35px;
+    padding: 35px 0;
+}
+.nav li a
+{
+    color: #e23393;
+}
+.nav li a:hover
+{
+    text-shadow: 1px 1px #888;
+}
+
+main
+{
+    float: left;
+    width: 100%;
+    padding: 10px 0 130px;
+    background: #ffffff url("../../images/bg.jpg") repeat center;
+}
+
+footer .container .section,
+main .container .section
+{
+    margin: 15px 0;
+    background: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+footer .container .section img
+{
+    width: 100%;
+    height: auto;
+}
+main .container .section img
+{
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}
+
+#book
+{
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'damionregular';
+    font-size: 75px;
+    background: #ef98c2;
+    color: #fff;
+}
+
+footer
+{
+    float: left;
+    width: 100%;
+    height: 330px;
+    padding: 10px 0 100px;
+    background: #e23393;
+    border-top: 2px solid #fff; 
+}
+
+footer .container .section:first-child
+{
+    margin-top: -135px;
+    padding: 15px;
+}
+
+footer .container .section:last-child
+{
+    border-top: 1px solid #888;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+
+/* tiny mce */
+#tinymce,
+.tinyMce {
+    padding: 20px;
+}
+#tinymce h1,
+.tinyMce h1 {
+    display: block;
+    padding: 20px 0 5px 0;
+    margin: 0 0 20px 0;
+}
+#tinymce a,
+.tinyMce a {
+    color: #e23393;
+}
+#tinymce a,
+.tinyMce a:hover {
+    text-decoration: underline;
+}
+#tinymce p,
+.tinyMce p {
+    padding: 5px 0 20px;
+    line-height: 17px;
+    margin: 0;
+    width: 100%;
+}
+#tinymce img,
+.tinyMce img,
+#tinymce #display,
+.tinyMce #display
+{
+    border: none;
+    padding: 5px 0;
+    margin: 0 auto;
+}
+#tinymce ul li,
+.tinyMce ul li,
+#tinymce  ol li,
+.tinyMce ol li {
+    padding: 5px 0;
+    list-style-position: inside;
+}
+#tinymce.mce-content-body table,
+.tinyMce table {
+    border: 1px solid #e23393;
+}
+#tinymce.mce-content-body table th,
+.tinyMce table th {
+    background: #e23393;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+#tinymce.mce-content-body table td ,
+.tinyMce table td {
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+#tinymce img,
+.tinyMce img {
+}

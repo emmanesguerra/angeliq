@@ -1,0 +1,232 @@
+@extends('layouts.app')
+
+@section('ae-css')
+@if (!empty($css) && count($css) > 0)
+@foreach ($css as $style)
+<link href="{{ asset('css/templates/' . $style) }}" rel="stylesheet">
+@endforeach
+@endif
+@endsection
+
+@section('content')
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 logo">
+                    <span class="main">
+                        angeliq
+                    </span>
+                    <span class="sub">
+                        Cakes, Breads & Butters
+                    </span>                
+                </div>
+                <div class="col-sm-8"> 
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cakes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Breads</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Butters</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="section">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="tinyMce">
+                            <h1>About Us</h1>
+                            <img src="images/TCH_header1.png" width="100%">
+                            <p>
+                                <a href='#'>Lorem Ipsum</a> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                            <h2>Concept</h2>
+                            <p>
+                                Donec dignissim, <strong>ante in sodales sodales</strong>, nulla nisi lobortis lorem, nec tincidunt elit ligula et purus. Duis maximus pretium tempus. Donec convallis leo eu leo sagittis posuere. Donec quis dapibus leo, ac luctus dolor. In in viverra arcu, eget tempor purus. Quisque sem nibh, mattis nec tellus nec, ultricies tempus ipsum. Nullam non quam odio. Mauris mattis quam sed suscipit placerat.
+                            </p>
+                            <h3>Principle</h3>
+                            <p>
+                                <i>Etiam fermentum tellus sed posuere volutpat</i>. Nunc nunc ipsum, auctor at venenatis id, fringilla vitae odio. In ut semper enim. Duis eu posuere lorem. Donec id sagittis sem. Nam odio enim, sollicitudin ac scelerisque eget, efficitur ut sem. Etiam consequat at orci vel mollis.
+                            </p>
+                            
+                            <p>
+                                Sed eu ante a diam volutpat condimentum. Fusce aliquam eleifend mi. Ut fermentum a lectus ac elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur, lorem tempus blandit varius, elit magna iaculis enim, nec faucibus risus purus et lorem. Vivamus tincidunt sapien turpis, nec efficitur neque condimentum sed. Sed sagittis sem sed nulla accumsan blandit. Ut tortor erat, venenatis et volutpat congue, dapibus ac dolor. Phasellus quis felis quis tortor tincidunt blandit. Praesent mauris tortor, vestibulum in nisl sed, mattis condimentum eros.
+                            </p>
+                            
+                            <h4>Dos and Dont's in H4</h4>
+                            <ul>
+                                <li><a href='#'>Donec bibendum</a> elit id libero finibus dignissim</li>
+                                <li>Vivamus placerat mi at tortor efficitur bibendum</li>
+                                <li>Curabitur suscipit venenatis odio nec porttitor</li>
+                                <li>Praesent velit velit, ultricies pretium efficitur a, lobortis eget mauris. Aliquam erat volutpat. Fusce in facilisis nibh</li>
+                                <li>In sed accumsan ipsum, vel semper mauris</li>
+                            </ul>
+                            
+                            <h5>Dos and Dont's in H5</h5>
+                            <ol>
+                                <li>Donec bibendum elit id libero finibus dignissim</li>
+                                <li>Vivamus placerat mi at tortor efficitur bibendum</li>
+                                <li>Curabitur suscipit venenatis odio nec porttitor</li>
+                                <li>Praesent velit velit, ultricies pretium efficitur a, lobortis eget mauris. Aliquam erat volutpat. Fusce in facilisis nibh</li>
+                                <li>In sed accumsan ipsum, vel semper mauris</li>
+                            </ol>
+                            
+                            <h6>Events in h6</h6>
+                            <table>
+                                <tr>
+                                    <th>Head 1</th>
+                                    <th>Head 2</th>
+                                    <th>Head 3</th>
+                                    <th>Head 4</th>
+                                    <th>Head 5</th>
+                                    <th>Head 6</th>
+                                </tr>
+                                <tr>
+                                    <td><a href='#'>Content 1</a></td>
+                                    <td>Content 2</td>
+                                    <td>Content 3</td>
+                                    <td>Content 4</td>
+                                    <td>Content 5</td>
+                                    <td>Content 6</td>
+                                </tr>
+                                <tr>
+                                    <td><a href='#'>Content 1</a></td>
+                                    <td>Content 2</td>
+                                    <td>Content 3</td>
+                                    <td>Content 4</td>
+                                    <td>Content 5</td>
+                                    <td>Content 6</td>
+                                </tr>
+                                <tr>
+                                    <td><a href='#'>Content 1</a></td>
+                                    <td>Content 2</td>
+                                    <td>Content 3</td>
+                                    <td>Content 4</td>
+                                    <td>Content 5</td>
+                                    <td>Content 6</td>
+                                </tr>
+                                <tr>
+                                    <td><a href='#'>Content 1</a></td>
+                                    <td>Content 2</td>
+                                    <td>Content 3</td>
+                                    <td>Content 4</td>
+                                    <td>Content 5</td>
+                                    <td>Content 6</td>
+                                </tr>
+                                <tr>
+                                    <td><a href='#'>Content 1</a></td>
+                                    <td>Content 2</td>
+                                    <td>Content 3</td>
+                                    <td>Content 4</td>
+                                    <td>Content 5</td>
+                                    <td>Content 6</td>
+                                </tr>
+                                <tr>
+                                    <td><a href='#'>Content 1</a></td>
+                                    <td>Content 2</td>
+                                    <td>Content 3</td>
+                                    <td>Content 4</td>
+                                    <td>Content 5</td>
+                                    <td>Content 6</td>
+                                </tr>
+                                <tr>
+                                    <td><a href='#'>Content 1</a></td>
+                                    <td>Content 2</td>
+                                    <td>Content 3</td>
+                                    <td>Content 4</td>
+                                    <td>Content 5</td>
+                                    <td>Content 6</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="section">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <img src="images/gelie.jpg" width="120%">
+                            </div>
+                            <div class="col-sm-9">
+                                <h3>Meet Gelie</h3>
+                                <p style="text-align: justify">
+                                    I'm Gelie. I am the Creative Director of Angeliq. 
+                                    I’m a self taught baker, trained in the comfort of my parents' 
+                                    kitchen, turned professional baker. <br><br>
+
+                                    I'd like to thank you for visiting our website. 
+                                    Decobake will custom-design any cake or cupcakes 
+                                    to your specifications. <br><br>
+
+                                    We'd love to hear from you so feel free to contact us!<br><br>
+
+                                    Regards,<br>
+                                    Gelie
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <img src="images/b.png" width="100%"  style="border: 1px solid #fafafa; 
+                                     border-radius: 50%; background: #fafafa;">
+                            </div>
+                            <div class="col-sm-9">
+                                <h3>Contact Us</h3>
+                                <p style="text-align: justify">
+                                    We try very hard to respond to each email we receive. 
+                                    Please forgive us if, for some reason, we are unable to get 
+                                    back to you in a timely manner. <br><br>
+
+                                    We are here to help!<br><br>
+
+                                    Phone: +63 2 2140001<br>
+                                    Mobile: +63 9983070001<br>
+                                    Viber: +63 9062520001<br>
+                                    Email: info@angeliq.com.ph<br>
+                                    Facebook: https://www.facebook.com/Angeliq
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3" style="color: #fff">© 2018 Copyright:
+                <a href="#" style="color: #fff; text-decoration: underline">AE Services</a>. All rights reserved.
+            </div>
+            <!-- Copyright -->
+        </div>
+    </footer>
+</body>
+@endsection
+
+@section('ae-scripts')
+@if (!empty($js) && count($js) > 0)
+@foreach ($js as $scripts)
+<script src="{{ asset('js/templates/' . $scripts) }}"></script>
+@endforeach
+@endif
+@endsection

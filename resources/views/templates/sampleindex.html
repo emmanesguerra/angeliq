@@ -1,0 +1,178 @@
+@extends('layouts.app')
+
+@section('ae-css')
+@if (!empty($css) && count($css) > 0)
+@foreach ($css as $style)
+<link href="{{ asset('css/templates/' . $style) }}" rel="stylesheet">
+@endforeach
+@endif
+@endsection
+
+@section('content')
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 logo">
+                    <span class="main">
+                        angeliq
+                    </span>
+                    <span class="sub">
+                        Cakes, Breads & Butters
+                    </span>                
+                </div>
+                <div class="col-sm-8"> 
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cakes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Breads</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Butters</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="section">
+                <img src="images/banner.jpg" width="100%">
+            </div>
+            <div class="section">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p style="text-align: center; margin-top: 89px; padding: 20px 0 20px 20px">
+                            CORPORATE<br>
+                            <i>Special treats for the industry</i><br>
+                            Angeliq can customize your sweet treats for product launches, corporate gifts, 
+                            company events, corporate parties and many more. Corporate cupcakes and cookies are one of 
+                            our specialties and our client list includes Philippines’s most respected companies.<br><br>
+                            <a href="#" style="color:#ef98c2">read more</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="images/corporate-clients-decobake.jpg" width="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <a href="#" id="book">Book your event</a>
+            </div>
+            <div class="section">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/wedding-decobake-1.jpg" width="100%">
+                    </div>
+                    <div class="col-sm-6">
+                        <p style="text-align: center; margin-top: 89px; padding: 20px 20px 20px 0">
+                            WEDDINGS<br>
+                            <i>by Decobake</i><br><br>
+                            At Decobake we believe in a truly personal approach. 
+                            We recognize that wedding is such an important celebration which deserves a 
+                            very special cake and that is why we go to great lengths to create the wedding cake 
+                            of your dreams.<br><br>
+                            <a href="#" style="color:#ef98c2">read more</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p style="text-align: center; margin-top: 89px; padding: 20px 0 20px 20px">
+                            DESSERT BUFFET<br>
+                            <i>Tailor-made just for you</i><br><br>
+                            Let Decobake help you transform your event into dessert 
+                            heaven with one of our magical dessert tables.<br><br>
+                            <a href="#" style="color:#ef98c2">read more</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="images/decobake-dessert-buffet-1-min.png" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="section">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <img src="images/gelie.jpg" width="120%">
+                            </div>
+                            <div class="col-sm-9">
+                                <h3>Meet Gelie</h3>
+                                <p style="text-align: justify">
+                                    I'm Gelie. I am the Creative Director of Angeliq. 
+                                    I’m a self taught baker, trained in the comfort of my parents' 
+                                    kitchen, turned professional baker. <br><br>
+
+                                    I'd like to thank you for visiting our website. 
+                                    Decobake will custom-design any cake or cupcakes 
+                                    to your specifications. <br><br>
+
+                                    We'd love to hear from you so feel free to contact us!<br><br>
+
+                                    Regards,<br>
+                                    Gelie
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <img src="images/b.png" width="100%"  style="border: 1px solid #fafafa; 
+                                     border-radius: 50%; background: #fafafa;">
+                            </div>
+                            <div class="col-sm-9">
+                                <h3>Contact Us</h3>
+                                <p style="text-align: justify">
+                                    We try very hard to respond to each email we receive. 
+                                    Please forgive us if, for some reason, we are unable to get 
+                                    back to you in a timely manner. <br><br>
+
+                                    We are here to help!<br><br>
+
+                                    Phone: +63 2 2140001<br>
+                                    Mobile: +63 9983070001<br>
+                                    Viber: +63 9062520001<br>
+                                    Email: info@angeliq.com.ph<br>
+                                    Facebook: https://www.facebook.com/Angeliq
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3" style="color: #fff">© 2018 Copyright:
+                <a href="#" style="color: #fff; text-decoration: underline">AE Services</a>. All rights reserved.
+            </div>
+            <!-- Copyright -->
+        </div>
+    </footer>
+</body>
+@endsection
+
+@section('ae-scripts')
+@if (!empty($js) && count($js) > 0)
+@foreach ($js as $scripts)
+<script src="{{ asset('js/templates/' . $scripts) }}"></script>
+@endforeach
+@endif
+@endsection
